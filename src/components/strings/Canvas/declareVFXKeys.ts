@@ -21,7 +21,7 @@ export default (data: { [index: string]: any }) => {
   functionTrigger.listenToTriggerKeysAvailability()
 
   return () => {
-    functionTrigger.executeAvailableTriggers()
     functionTrigger.executeNonAvailableTriggers()
+    functionTrigger.executeAvailableTriggers()
   }
 }
