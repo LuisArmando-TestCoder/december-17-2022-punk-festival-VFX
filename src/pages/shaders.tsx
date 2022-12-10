@@ -23,7 +23,11 @@ export default () => {
         <div
             style={{
                 display: 'grid',
-                gridTemplateColumns: 'repeat( auto-fit, minmax(250px, 1fr) )'
+                gridTemplateColumns: 'repeat( auto-fit, minmax(250px, 1fr) )',
+                gridGap: 10,
+                margin: 'auto',
+                width: 'clamp(280px, 100%, 780px)',
+                padding: '100px 0',
             }}
         >
             {
