@@ -27,6 +27,6 @@ export default presetObject => {
       image: craneImages[craneIndex] 
     }).image()
 
-    frame += 0.5
+    frame += 0.25
   }
 }

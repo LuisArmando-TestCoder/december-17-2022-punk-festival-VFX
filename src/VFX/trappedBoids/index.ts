@@ -25,7 +25,7 @@ function handleBoidAnimation(boid) {
   const movedBoid = getMovedBoid.call(this, boid, updatedBoid)
   setBoidBoundary.call(this, movedBoid, boid)
   setBoidMove.call(this, movedBoid, boid)
-  boid.color = getColor.call(this)
+  boid.color = /* getColor.call(this) */ "#fff"
 }
 
 function getBoids(amount) {
