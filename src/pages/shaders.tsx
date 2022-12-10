@@ -1,25 +1,9 @@
-import React, { useRef } from "react"
-import * as Components from "../components"
-import hillPattern from "../shaders/hillPattern"
-import gooeyMosaic from "../shaders/gooeyMosaic"
-import zoomTest from "../shaders/zoomTest"
-import planet from "../shaders/planet"
-import tokyo from "../shaders/tokyo"
-import gammaRay from "../shaders/gammaRay"
-import hotTunnelDNA from "../shaders/hotTunnelDNA"
+import React from "react"
+import * as shaders from "../shaders"
 import { GlobalWrapper } from "../components/strings"
 
-const shaders = {
-  hillPattern,
-  gooeyMosaic,
-  zoomTest,
-  planet,
-  tokyo,
-  gammaRay,
-  hotTunnelDNA,
-}
-
 export default () => {
+  console.log(shaders)
   return (
     <GlobalWrapper title='shaders'>
       <div
@@ -32,7 +16,7 @@ export default () => {
           padding: "100px 0",
         }}
       >
-        {Object.entries(shaders).map(([key]) => {
+        {Object.keys(shaders).map(key => {
           const path = `/shaders/${key}`
           return (
             <a
