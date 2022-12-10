@@ -44,6 +44,7 @@ export default () => {
                                     margin: 0,
                                     border: 0,
                                     pointerEvents: 'none',
+                                    width: '100%'
                                 }}
                             src={path} />
                         </a>
