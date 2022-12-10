@@ -31,6 +31,7 @@ export default () => {
                     const path = `/shaders/${key}`                   
                     return (    
                         <a 
+                            target='_blank'
                             href={path}
                             key={key}
                             style={{
