@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react"
+import React, { useEffect, useRef } from "react"
 import preset from "canvas-preset"
 import declareVFXKeys from "./declareVFXKeys"
 import "./styles.scss"

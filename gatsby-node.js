@@ -2,7 +2,6 @@ const fs = require('fs')
 
 exports.createPages = async function ({ actions }) {
   fs.readdir('./src/shaders', (_, files) => {
-    console.log(files)
     files.forEach(fileName => {
       const key = fileName.replace(/\.ts/g, '')
   
